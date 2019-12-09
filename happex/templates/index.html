@@ -10,6 +10,7 @@
     <title>Hello from Flask</title>
 </head>
 <body>
+    <h1>Happiness Score by Country</h1>
     <div id="container" style="position: relative; width: 1000px; height: 600px;" class="ui container"></div>
     <script>
         var series = {{ data|tojson|safe }};
@@ -59,5 +60,6 @@
                 }
             });
     </script>
+    <p>Click on a country for more detailed statistics.</p>
 </body>
 </html>

@@ -14,13 +14,27 @@
     <p>Life satisfaction over time</p>
     <img src="/country/{{code}}/graph.png">
     <div>
-        <p>Overall life satisfaction: {{ ladder }}</p>
-        <p>Life expectancy: {{ lifeexpect }}</p>
-        <p>Social Support: {{ socialsupport }}</p>
-        <p>Generosity: {{ generosity }}</p>
-        <p>Positive Affect: {{ paffect }}</p>
-        <p>Delivery Quality: {{ deliveryquality }}</p>
-        <p>Perception of Corruption: {{ corruption }}</p>
+        <p>Overall life satisfaction: {{ ladder }}<br>
+        <i>Average response of this question –“Please imagine a ladder, with steps numbered from 0 at the bottom to 10 at the top. The top of the ladder represents the best possible life for you and the bottom of the ladder represents the worst possible life for you. On which step of the ladder would you say you personally feel you stand at this time?”</i>
+        </p>
+        <p>Life expectancy: {{ lifeexpect }}<br>
+        <i>Based on data from the WHO (World Health Organization)</i>
+        </p>
+        <p>Social Support: {{ socialsupport }}<br>
+        <i>Average of binary responses (either 0 or 1) to this question: “If you were in trouble, do you have relatives or friends you can count on to help you whenever you need them, or not?”</i>
+        </p>
+        <p>Generosity: {{ generosity }}<br>
+        <i>Generosity is the residual of regressing national average of response to the GWP question “Have you donated money to a charity in the past month?” on GDP per capita.</i>
+        </p>
+        <p>Positive Affect: {{ paffect }}<br>
+        <i>The average of the responses to three questions: “Did you experience the following feelings during A LOT OF THE DAY yesterday?” Happiness/Enjoyment/Laughter</i>
+        </p>
+        <p>Delivery Quality: {{ deliveryquality }}<br>
+        <i>Data pulled from Worldwide Governance Indicators project, this uses 4 dimensions in the report – “Government Effectiveness”, “Regulatory Quality”, “Rule of Law”, “Control of Corruption”.</i>
+        </p>
+        <p>Perception of Corruption: {{ corruption }}<br>
+        <i>The average of the responses to two binary questions: “Is corruption widespread throughout the government or not?” and “Is corruption widespread within business or not?”</i>
+        </p>
     </div>
 </body>
 </html>
