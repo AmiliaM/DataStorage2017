@@ -133,3 +133,14 @@ class DB:
         rows = cur.fetchall()
         cur.close()
         return rows
+
+    def get_graph(self, query):
+        cur = self.db.cursor()
+        cur.execute(query)
+        rows = cur.fetchall()
+        x = []
+        y = []
+        for item in rows:
+            y.append(item[0])
+            x.append(item[1])
+        return (x, y)
